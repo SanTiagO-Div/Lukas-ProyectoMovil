@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "Lukas",
+    "slug": "finanzas-app",
+    "version": "1.1.7",
+    "icon": "./assets/icon.png",
+    "scheme": "finanzasapp",
+    "userInterfaceStyle": "dark",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.jrodriguez.finanzas"
+    },
+    "android": {
+      "package": "com.jrodriguez.finanzas",
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE"
+      }
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Lukas permite seleccionar un pantallazo; no interpreta automáticamente sus movimientos.",
+          "cameraPermission": false,
+          "microphonePermission": false
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#0B1220",
+          "resizeMode": "contain"
+        }
+      ],
+      "expo-status-bar",
+      "@react-native-community/datetimepicker"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
